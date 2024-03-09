@@ -1,22 +1,27 @@
 <template>
-  <nav class="flex md:flex-row justify-between p-4 md:p-8 bg-pfWhite items-center">
+  <nav class="flex justify-between items-center p-4 bg-pfWhite w-full">
     <h1 class="font-bold font-allura text-5xl animate-pulse">SavvyXCodes</h1>
 
-		<button class="md:hidden" @click="toggleNav">
-			<i class="bi bi-list text-6xl font-bold"></i>
-		</button>
+    <button @click="toggleNav" class="md:hidden">
+      <i class="bi bi-list text-6xl font-bold"></i>
+    </button>
 
-    <ul class=" bg-pfWhite md:flex justify-evenly md:flex-row gap-3 navLink transition-all duration-300 ease-in-out absolute h-fit w-full  md:static top-16 left-0 w-full md:w-auto p-4" v-show="!navOpen && !isMobile">
+    <!-- Apply horizontal spacing with md:space-x-4 for desktop -->
+    <ul :class="isOpen ? 'flex flex-col absolute w-full bg-pfWhite top-20 left-0 p-4 ' : 'hidden'" class="md:flex md:flex-row md:relative md:w-auto md:space-x-4 md:top-0">
       <li>
-        <a href="/" class="font-poppins text-xl">About Me</a>
+        <a href="/" class="text-2xl">
+          About Me
+        </a>
       </li>
+
       <li>
-        <a href="https://www.github.com/Avvyyy/" class="font-poppins text-xl">
+        <a href="https://www.github.com/Avvyyy/" class="text-2xl">
           <i class="bi bi-github"></i>
         </a>
       </li>
+
       <li>
-        <a href="https://www/linkedin.com/in/favour-uzochukwu/" class="font-poppins text-xl">
+        <a href="https://www.linkedin.com/in/favour-uzochukwu/" class="text-2xl">
           <i class="bi bi-linkedin"></i>
         </a>
       </li>
@@ -25,17 +30,17 @@
 </template>
 
 <script>
-
 export default {
-	data() {
-		return {
-			navOpen: true,
-		}
-	},
-	methods: {
-		toggleNav() {
-			this.navOpen = !this.navOpen
-		}
-	},
-};
+  data() {
+    return {
+      isOpen: false,
+    }
+  },
+
+  methods: {
+    toggleNav() {
+      this.isOpen = !this.isOpen;
+    }
+  },
+}
 </script>

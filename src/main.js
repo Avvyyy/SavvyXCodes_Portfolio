@@ -1,11 +1,9 @@
-import { createApp } from 'vue'; // Import createApp from Vue
+import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import VueTypedJs from 'vue-typed-js';
+import App from './App.vue'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+// import VueTyperPlugin from 'vue-typer'
 
-const app = createApp(App); // Create the Vue app instance
+// Vue.use(VueTyperPlugin)
 
-app.use(VueTypedJs); // Use the VueTypedJs plugin
-
-app.mount('#app'); // Mount the app to the DOM
+createApp(App).mount('#app')

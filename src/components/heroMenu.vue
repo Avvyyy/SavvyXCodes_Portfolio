@@ -1,21 +1,20 @@
 <template>
-  <div>
-    <h1 class="text-3xl text-pfWhite font-bold">I am Favour Uzochukwu</h1>
-
-    <vue-typed-js :strings="[text1, text2, text3]" class="text-pfWhite">
-      <h1 class="typing"></h1>
-    </vue-typed-js>
-  </div>
+  <div id="typed-output" class="bgWhite"></div>
 </template>
 
 <script>
+import { onMounted } from 'vue';
+import Typed from 'typed.js';
+
 export default {
-  data() {
-    return {
-      text1: "VueJs Developer",
-      text2: "Microsoft Learn Ambassador",
-      text3: "I write compelling content"
+  mounted() {
+    const options = {
+      strings: ['Hello, world!', 'Welcome to Vue.js.'],
+      typeSpeed: 50,
+      backSpeed: 50,
     };
-  }
-};
+
+    new Typed('#typed-output', options);
+  },
+}
 </script>
