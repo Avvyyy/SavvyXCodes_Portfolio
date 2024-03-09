@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-between items-center p-4 bg-pfWhite w-full">
+  <nav class="flex justify-between items-center p-6 mb-20 bg-pfWhite w-full">
     <h1 class="font-bold font-allura text-5xl animate-pulse">SavvyXCodes</h1>
 
     <button @click="toggleNav" class="md:hidden">
