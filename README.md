@@ -13,6 +13,7 @@ Now you understand the blinking concept in my portfolio.
 
 ### Icons
 - Bootstrap Icons
+- CoreUI
 
 ### Typing Animation
 - Typed.js

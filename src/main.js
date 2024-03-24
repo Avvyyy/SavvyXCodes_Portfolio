@@ -1,9 +1,14 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import './style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-// import VueTyperPlugin from 'vue-typer'
+import { Icon } from '@iconify/vue';
+import '@iconify/iconify';
 
-// Vue.use(VueTyperPlugin)
 
-createApp(App).mount('#app')
+
+
+const app = createApp(App)
+
+app.component('Icon', Icon);
+app.mount('#app')

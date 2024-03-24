@@ -1,13 +1,18 @@
 <template>
-  <section class="p-6">
-  <h1 class="font-bold text-5xl text-pfWhite font-poppins">Favour (Adachukwu) Uzochukwu</h1>
-  <div id="typed-output" class="text-pfWhite font-allura text-xl text-3xl"></div>
+  <section class="bg-aboutMeBackground h-screen w-100 bg-center bg-cover bg-no-repeat pt-40">
+    <div class="flex flex-col">
+      <h1 class="font-bold text-5xl text-pfWhite font-poppins mb-3">Favour (Adachukwu) Uzochukwu</h1>
+      <p class="font-semibold text-xl text-pfPink">GenZ Tech Baddie</p>
+      <div id="typed-output" class="text-pfWhite font-allura md:text-4xl text-2xl"></div>
+
+    </div>
 </section>
 </template>
 
 <script>
 import { onMounted, ref } from 'vue';
 import Typed from 'typed.js';
+import { Icon } from '@iconify/vue';
 
 export default {
   mounted() {

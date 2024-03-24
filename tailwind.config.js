@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 export default {
   content: [
     "./index.html",
@@ -15,8 +16,13 @@ export default {
         'pfPurple': '#7303c0',
         'pfWhite': '#fdeff9',
         'pfPink': '#ec38bc'
+      },
+      backgroundImage: {
+        'aboutMeBackground': "url('./assets/aboutMe.jpg')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    addDynamicIconSelectors(),
+  ],
 }
