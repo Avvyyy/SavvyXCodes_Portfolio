@@ -1,10 +1,9 @@
 <template>
   <section>
-    <div class="bg-pfWhite w-full m-auto">
-      <h2 id="aboutMe" class="text-pfblack font-bold text-3xl text-center">
+      <h2 id="aboutMe" class="text-pfWhite font-bold text-3xl text-center">
         About Me
       </h2>
-      <p class="text-pfWhite">
+      <p class="text-pfBlack m-auto bg-pfWhite text-center w-3/4 h-3/4">
         I am a Computer Science Major at Babcock University. When I am not
         writing codes, you can find me writing about life or "writing
         documentation for my codes"
@@ -58,7 +57,6 @@
           </li>
         </ul>
       </div>
-    </div>
   </section>
 </template>
 

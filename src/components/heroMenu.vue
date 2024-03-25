@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-aboutMeBackground h-screen w-100 bg-center bg-cover bg-no-repeat pt-40">
+  <section class="bg-aboutMeBackground h-screen w-full bg-center bg-cover bg-no-repeat pt-40">
     <div class="flex flex-col">
       <h1 class="font-bold text-5xl text-pfWhite font-poppins mb-3">Favour (Adachukwu) Uzochukwu</h1>
       <p class="font-semibold text-xl text-pfPink">GenZ Tech Baddie</p>
@@ -12,7 +12,6 @@
 <script>
 import { onMounted, ref } from 'vue';
 import Typed from 'typed.js';
-import { Icon } from '@iconify/vue';
 
 export default {
   mounted() {
